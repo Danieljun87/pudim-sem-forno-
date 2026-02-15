@@ -210,14 +210,14 @@ const UpsellPopup = ({ onClose }: { onClose: () => void }) => {
 
           {/* Buttons */}
           <a 
-            href="https://ggcheckout.com.br/checkout/v2/cus2VSjyMohHqpZIMNuv"
+            href="https://pay.sistemadadoceira.online/checkout/v2/cus2VSjyMohHqpZIMNuv"
             className="block w-full bg-[#6366f1] hover:bg-[#4f46e5] text-white font-bold py-3.5 rounded-xl shadow-lg mb-3 transition-colors text-lg"
           >
             Sim, quero garantir agora
           </a>
 
           <a 
-            href="https://ggcheckout.com.br/checkout/v2/MUyBkmeBYqSrLw3Aw2IL"
+            href="https://pay.sistemadadoceira.online/checkout/v2/MUyBkmeBYqSrLw3Aw2IL"
             className="block w-full py-2 text-red-600 font-medium text-sm hover:text-red-700 hover:bg-red-50 rounded-lg transition-colors"
           >
             Não, obrigado
@@ -745,7 +745,7 @@ const App: React.FC = () => {
                 <p className="text-gray-900 text-sm md:text-lg font-black uppercase tracking-[0.3em]">POR APENAS</p>
                 <p className="text-[#00E000] text-5xl md:text-[88px] font-black drop-shadow-lg tracking-tighter leading-none break-words">R$ 26,90</p>
               </div>
-              <a href="https://ggcheckout.com.br/checkout/v2/gvXkc5OV7JUTsknDKFVI" className="block text-center shimmer-btn animate-pulse-grow w-full bg-[#00E000] hover:bg-[#00C000] text-white font-black py-4 md:py-7 rounded-2xl shadow-xl text-xl md:text-3xl transition-all uppercase tracking-widest mt-4 border-b-4 border-green-700">QUERO O MÉTODO COMPLETO</a>
+              <a href="https://pay.sistemadadoceira.online/checkout/v2/gvXkc5OV7JUTsknDKFVI" className="block text-center shimmer-btn animate-pulse-grow w-full bg-[#00E000] hover:bg-[#00C000] text-white font-black py-4 md:py-7 rounded-2xl shadow-xl text-xl md:text-3xl transition-all uppercase tracking-widest mt-4 border-b-4 border-green-700">QUERO O MÉTODO COMPLETO</a>
             </div>
           </div>
 
