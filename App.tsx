@@ -133,6 +133,10 @@ const BonusCard = ({ title, description, image, oldPrice }: { title: string, des
         <img 
           src={image} 
           alt={title} 
+          loading="lazy"
+          decoding="async"
+          width="400"
+          height="300"
           className="w-full h-[250px] md:h-[300px] object-contain"
         />
       </div>
@@ -251,7 +255,7 @@ const App: React.FC = () => {
         <div className="flex flex-col items-center mb-5">
           <h1 className="text-[#C62828] font-black text-3xl md:text-5xl uppercase leading-none tracking-tighter mb-2">
             MÃES LUCRAM ATÉ <br/>
-            R$2.000/SEMANA
+            R$2.000 POR SEMANA
           </h1>
           <h2 className="text-[#C62828] font-black text-2xl md:text-4xl uppercase leading-none tracking-tighter">
             COM PUDINS SEM FORNO QUE <br/>
@@ -261,17 +265,20 @@ const App: React.FC = () => {
 
         {/* Subtext */}
         <div className="mb-10 px-4">
-          <p className="font-bold text-[11px] md:text-sm text-gray-900 underline decoration-1 underline-offset-2 leading-tight max-w-lg mx-auto">
-            30 Receitas de Pudins Sem Forno, Sem Fogão e Sem Ovos — Simples, Rápidas e Prontas Para Você Começar Hoje.
+          <p className="font-bold text-sm md:text-xl text-gray-900 underline decoration-1 underline-offset-2 leading-tight max-w-lg mx-auto">
+            30 Receitas de Pudins Sem Forno, Sem Fogão e Sem Ovos  Simples, Rápidas e Prontas Para Você Começar Hoje.
           </p>
         </div>
 
         {/* Image 1: Caramel Pudding */}
-        <div className="bg-white p-2 rounded-[24px] shadow-2xl mb-8 w-full max-w-[280px] md:max-w-[340px]">
+        <div className="bg-white p-2 rounded-[24px] shadow-2xl mb-8 w-full max-w-[320px] md:max-w-[420px]">
           <img 
             src="https://i.ibb.co/8LMDxjrz/Design-sem-nome-1.png" 
             alt="Pudim de Caramelo" 
-            className="w-full rounded-[20px] object-cover aspect-square"
+            width="800"
+            height="800"
+            fetchPriority="high"
+            className="w-full rounded-[20px] h-auto"
           />
         </div>
 
@@ -303,11 +310,15 @@ const App: React.FC = () => {
           </p>
 
           {/* Image 2: Red Fruit Pudding */}
-          <div className="bg-white p-2 rounded-[24px] shadow-2xl mb-8 w-full max-w-[280px] md:max-w-[340px]">
+          <div className="bg-white p-2 rounded-[24px] shadow-2xl mb-8 w-full max-w-[150px] md:max-w-[180px]">
             <img 
               src="https://i.ibb.co/vCSLF7g8/Design-sem-nome-2.png" 
               alt="Pudim com Calda Vermelha" 
-              className="w-full rounded-[20px] object-cover aspect-square"
+              loading="lazy"
+              decoding="async"
+              width="400"
+              height="500"
+              className="w-full rounded-[20px] h-auto"
             />
           </div>
 
@@ -392,6 +403,10 @@ const App: React.FC = () => {
             <img 
               src="https://i.ibb.co/fdqpz1Q1/Gemini-Generated-Image-s12dp3s12dp3s12d-removebg-preview.png" 
               alt="Receitas de Pudim" 
+              loading="lazy"
+              decoding="async"
+              width="400"
+              height="500"
               className="w-full h-auto drop-shadow-2xl rounded-lg transform hover:scale-105 transition-transform duration-500"
             />
           </div>
@@ -674,11 +689,19 @@ const App: React.FC = () => {
              <img 
                src="https://i.ibb.co/wZpTQT6s/instagram-comments-4.png" 
                alt="Depoimento 1" 
+               loading="lazy"
+               decoding="async"
+               width="300"
+               height="300"
                className="rounded-xl shadow-lg border border-gray-200 w-full max-w-[280px] md:max-w-[300px]"
              />
              <img 
                src="https://i.ibb.co/vvB9bXbX/instagram-dm-1.png" 
                alt="Depoimento 2" 
+               loading="lazy"
+               decoding="async"
+               width="300"
+               height="300"
                className="rounded-xl shadow-lg border border-gray-200 w-full max-w-[280px] md:max-w-[300px]"
              />
           </div>
@@ -837,7 +860,15 @@ const App: React.FC = () => {
       <section className="w-full bg-white/40 py-20 flex flex-col items-center text-center">
         <h2 className="text-xl md:text-3xl font-black text-gray-950 uppercase tracking-[0.3em] mb-8">QUEM É  RENATA GOMES?</h2>
         <div className="w-48 h-48 md:w-64 md:h-64 rounded-[40px] border-8 border-white shadow-2xl overflow-hidden mb-8 transform rotate-2">
-          <img src="https://i.ibb.co/Gfmstf6h/confectioner-makes-macaroons-pastry-shop-979131-9239.avif" alt="Renata Gomes" className="w-full h-full object-cover" />
+          <img 
+            src="https://i.ibb.co/Gfmstf6h/confectioner-makes-macaroons-pastry-shop-979131-9239.avif" 
+            alt="Renata Gomes" 
+            loading="lazy"
+            decoding="async"
+            width="300"
+            height="300"
+            className="w-full h-full object-cover" 
+          />
         </div>
         
         <div className="max-w-3xl px-6 space-y-6 text-gray-900 font-medium text-lg md:text-xl leading-relaxed">
